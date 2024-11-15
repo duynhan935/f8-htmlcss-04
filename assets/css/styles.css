@@ -18,7 +18,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    background: #FFFAF5;
+    background: #fffaf5;
 }
 
 /* Common */
@@ -55,6 +55,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     min-width: 130px;
     height: var(--height);
     line-height: var(--height);
@@ -71,9 +72,30 @@ a {
     cursor: pointer;
 }
 
+.btn--primary {
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.section__heading {
+    color: #000958;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.section__desc {
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
 /* Header */
 .header {
-    min-height: 100vh;
     padding-top: 26px;
 }
 
@@ -121,6 +143,179 @@ a {
 }
 
 /* Hero */
-.hero__body{
+.hero {
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.hero__body {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 120px;
+}
+
+.hero__left {
+    display: flex;
+    position: relative;
+    padding-bottom: 94px;
+}
+
+.hero__img-wrap {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* 3 dòng trên để cho khi ảnh quá nhỏ so với thẻ chứa thì nó sẽ được tự động căn giữa và nằm sát ở dưới */
+
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    background: #fe997b;
+    border: 3px solid #fff;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor-left {
+    top: 16px;
+    right: -42px;
+}
+
+.hero__decor-right {
+    bottom: 10px;
+    left: -60px;
+}
+
+.hero__pet {
+    align-self: flex-end;
+    margin: 0 0 -58px -24px;
+    /* Hai dòng trên để cho nó sát qua bên phải rồi margin âm để nó ăn vô cái ảnh bên trái */
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    width: 186px;
+    height: 244px;
+    border-radius: 16px;
+    background: #faa7ad;
+    border: 2px solid #f7dddf;
+    z-index: 1;
+}
+
+.hero__pet-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+.hero__list {
+    position: absolute;
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    left: 130px;
+    bottom: 0;
+    z-index: 2;
+}
+
+.hero__list-item {
+    display: flex;
+}
+
+.hero__thumb-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fec23f;
+}
+
+.hero__list-info {
+    margin-left: 10px;
+}
+
+.hero__list-text {
+    color: #181e52;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__list-skeleton {
+    width: var(--width, 118px);
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+
+.hero__list-item-separate {
+    margin: 20px 0;
+    width: 222px;
+    height: 2px;
+    background: #f2f2f2;
+}
+
+.hero__heading {
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+    max-width: 517px;
+    margin-bottom: 24px;
+}
+
+.hero__desc {
+    max-width: 391px;
+    margin-bottom: 38px;
+}
+
+.hero__action {
+    display: flex;
+    align-items: center;
+}
+
+.hero__btn {
+    --height: 60px;
+    min-width: 190px;
+    font-size: 1.6rem;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
+}
+
+.hero__link {
+    color: #000958;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration-line: underline;
+    margin-left: 24px;
 }

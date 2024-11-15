@@ -96,6 +96,7 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
+        <!-- Header -->
         <header class="header">
             <div class="container">
                 <div class="header-top">
@@ -132,24 +133,126 @@
                     <div class="header-action">
                         <a href="#!" class="header-action__link">Sign in</a>
 
-                        <button href="#!" class="btn header-action__sign-up">
-                            Sign Up
-                        </button>
+                        <a href="#!" class="btn header-action__sign-up">
+                            Sign up
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
 
-        <main>
-            <!-- Hero -->
-            <section class="hero">
-                <div class="container">
-                    <div class="hero__body">
-                        <div class="hero__left"></div>
-                        <div class="hero__right"></div>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__body">
+                    <div class="hero__left">
+                        <div class="hero__img-wrap">
+                            <!-- Image -->
+                            <img
+                                src="./assets/img/hero__img.png"
+                                alt="cat"
+                                class="hero__img"
+                            />
+                            <!-- Decoration -->
+                            <img
+                                src="./assets/img/hero__decor-rightt.svg"
+                                alt="decoration"
+                                class="hero__decor hero__decor-left"
+                            />
+                            <img
+                                src="./assets/img/hero__decor-left.svg"
+                                alt="decoration"
+                                class="hero__decor hero__decor-right"
+                            />
+                        </div>
+                        <div class="hero__list">
+                            <!-- Item 1 -->
+                            <div class="hero__list-item">
+                                <div class="hero__thumb-wrap">
+                                    <img
+                                        src="./assets/img/hero__thumb.png"
+                                        alt="pet"
+                                        class="hero__thumb"
+                                    />
+                                </div>
+                                <div class="hero__list-info">
+                                    <p class="hero__list-text">Pet Health</p>
+                                    <div class="hero__list-skeleton"></div>
+                                    <div
+                                        class="hero__list-skeleton"
+                                        style="--width: 39px"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <div class="hero__list-item-separate"></div>
+
+                            <!-- Item 2 -->
+                            <div class="hero__list-item">
+                                <div
+                                    class="hero__thumb-wrap"
+                                    style="background: #6597c2"
+                                >
+                                    <img
+                                        src="./assets/img/hero__thumb.png"
+                                        alt="pet"
+                                        class="hero__thumb"
+                                    />
+                                </div>
+                                <div class="hero__list-info">
+                                    <p class="hero__list-text">Pet Care</p>
+                                    <div class="hero__list-skeleton"></div>
+                                    <div
+                                        class="hero__list-skeleton"
+                                        style="--width: 39px"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__pet">
+                            <img
+                                src="./assets/img/dog.png"
+                                alt="dog"
+                                class="hero__pet-img"
+                            />
+                        </div>
+                    </div>
+                    <div class="hero__right">
+                        <h1 class="section__heading hero__heading">
+                            Established & Trusted Pet Care Service
+                        </h1>
+                        <p class="section__desc hero__desc">
+                            Discover a wide variety of Pawsitive services to
+                            choose from, including daycare, private walks,
+                            office duty and spa.
+                        </p>
+                        <div class="hero__action">
+                            <a class="btn hero__btn btn--primary">
+                                Book a Meet
+                                <span class="btn-icon"
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="5"
+                                        height="6"
+                                        viewBox="0 0 5 6"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M1.48584 0.5L3.98584 3L1.48584 5.5"
+                                            stroke="#FD5056"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <a href="#!" class="hero__link">Schedule a Call</a>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+        <main></main>
     </body>
 </html>
